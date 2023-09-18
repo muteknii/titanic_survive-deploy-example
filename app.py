@@ -12,7 +12,7 @@ st.set_page_config(
 st.title('Titanic Survivor Prediction Model Deployment, Yall Better Survive !')
 
 if 'model' not in st.session_state:
-    model = pickle.load(open('data/model.sav', 'rb'))
+    model = pickle.load(open('model.sav', 'rb'))
     st.session_state['model'] = model
 
 pclass = st.selectbox('Pclass',
